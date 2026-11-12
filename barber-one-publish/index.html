@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#171613">
+  <meta name="description" content="BARBER ONE — выразительный дизайн-концепт барбершопа. Стрижка, борода и внимание к каждой детали.">
+  <title>BARBER ONE — стиль начинается с деталей</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">К содержимому</a>
+  <div class="scroll-progress" aria-hidden="true"></div>
+
+  <header class="site-header" id="top">
+    <div class="container header-inner">
+      <a class="brand" href="#top" aria-label="BARBER ONE — на главную"><span class="brand-symbol">B<span>✦</span>1</span><span class="brand-wordmark">BARBER <strong>ONE</strong></span></a>
+      <nav class="main-nav" id="main-nav" aria-label="Основная навигация">
+        <a href="#about">О нас</a><a href="#services">Услуги</a><a href="#space">Пространство</a><a href="#contact">Запись</a>
+      </nav>
+      <button class="header-button" type="button" data-booking>Записаться <span aria-hidden="true">↗</span></button>
+      <button class="menu-toggle" type="button" aria-controls="main-nav" aria-expanded="false" aria-label="Открыть меню"><span></span><span></span></button>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero" aria-labelledby="hero-title">
+      <img class="hero-photo" src="assets/hero-barber.jpg" alt="Барбер работает над мужской стрижкой" fetchpriority="high">
+      <div class="hero-shade"></div>
+      <div class="container hero-content">
+        <p class="eyebrow" data-reveal>БАРБЕРШОП С ХАРАКТЕРОМ <span class="eyebrow-line"></span> BARBER ONE</p>
+        <h1 id="hero-title" data-reveal>СТИЛЬ<br>НАЧИНАЕТСЯ<br><em>С ДЕТАЛЕЙ.</em></h1>
+        <p class="hero-copy" data-reveal>Точная форма. Спокойная атмосфера. Образ, в котором узнаёшь себя.</p>
+        <div class="hero-actions" data-reveal><a class="button button-gold" href="#services">Выбрать услугу <span aria-hidden="true">↗</span></a><a class="quiet-link" href="#about">Узнать больше <span aria-hidden="true">↓</span></a></div>
+      </div>
+      <div class="hero-aside" aria-hidden="true">BARBER ONE&nbsp; / &nbsp;CRAFT • CHARACTER • CARE</div>
+      <div class="hero-scroll" aria-hidden="true"><span>SCROLL TO EXPLORE</span><span class="scroll-line"></span></div>
+    </section>
+
+    <div class="ticker" aria-label="Стрижка, борода, уход"><div class="ticker-track" aria-hidden="true"><span>СТРИЖКА <i>✦</i> БОРОДА <i>✦</i> УХОД <i>✦</i> ТВОЙ СТИЛЬ <i>✦</i></span><span>СТРИЖКА <i>✦</i> БОРОДА <i>✦</i> УХОД <i>✦</i> ТВОЙ СТИЛЬ <i>✦</i></span></div></div>
+
+    <section class="about section" id="about">
+      <div class="container about-grid">
+        <div class="about-photo-wrap" data-reveal><img src="assets/beard-detail.jpg" alt="Барбер аккуратно оформляет бороду" loading="lazy"><span class="photo-index">01 / МАСТЕРСТВО</span></div>
+        <div class="about-copy"><p class="section-label" data-reveal>01 — КТО МЫ</p><h2 data-reveal>ТВОЙ СТИЛЬ.<br><em>НАША ТОЧНОСТЬ.</em></h2><p class="section-text" data-reveal>Хорошая стрижка не начинается с машинки. Она начинается с разговора: что тебе удобно, что нравится и каким ты хочешь выйти из кресла.</p><p class="section-text" data-reveal>Мы продумываем форму, детали и финальную укладку, чтобы результат работал не только в день визита.</p><a class="inline-link" href="#services" data-reveal>Посмотреть услуги <span aria-hidden="true">↗</span></a><div class="about-sign" data-reveal>BARBER ONE <span> / СВОЙ СТИЛЬ — СВОИ ПРАВИЛА</span></div></div>
+      </div>
+    </section>
+
+    <section class="services section" id="services">
+      <div class="container"><div class="section-header"><div><p class="section-label" data-reveal>02 — УСЛУГИ</p><h2 data-reveal>ВСЁ, ЧТО НУЖНО<br><em>ДЛЯ ТВОЕГО ОБРАЗА.</em></h2></div><p data-reveal>От короткой стрижки до полного обновления. Выбери услугу, а детали обсудим в кресле.</p></div>
+        <div class="service-list">
+          <article class="service-row" data-reveal><span class="service-number">01</span><div><h3>Мужская стрижка</h3><p>Форма, мытьё и укладка</p></div><strong>от 1 800 ₽</strong><button type="button" data-booking data-service="Мужская стрижка" aria-label="Выбрать мужскую стрижку">↗</button></article>
+          <article class="service-row" data-reveal><span class="service-number">02</span><div><h3>Стрижка машинкой</h3><p>Чёткие линии без лишнего</p></div><strong>от 1 200 ₽</strong><button type="button" data-booking data-service="Стрижка машинкой" aria-label="Выбрать стрижку машинкой">↗</button></article>
+          <article class="service-row" data-reveal><span class="service-number">03</span><div><h3>Оформление бороды</h3><p>Форма, контур и уход</p></div><strong>от 900 ₽</strong><button type="button" data-booking data-service="Оформление бороды" aria-label="Выбрать оформление бороды">↗</button></article>
+          <article class="service-row" data-reveal><span class="service-number">04</span><div><h3>Стрижка + борода</h3><p>Цельный образ за один визит</p></div><strong>от 2 500 ₽</strong><button type="button" data-booking data-service="Стрижка + борода" aria-label="Выбрать стрижку и бороду">↗</button></article>
+        </div>
+        <p class="price-note">Цены приведены для демонстрации дизайн-концепта.</p>
+      </div>
+    </section>
+
+    <section class="statement" aria-label="Философия BARBER ONE"><div class="container"><span class="statement-star" data-reveal>✳</span><p data-reveal>МЕНЬШЕ СЛОВ.<br>БОЛЬШЕ <em>ХАРАКТЕРА.</em></p><span class="statement-credit" data-reveal>BARBER ONE / НАШ ПОДХОД</span></div></section>
+
+    <section class="space section" id="space"><div class="container space-grid"><div class="space-copy"><p class="section-label" data-reveal>03 — ПРОСТРАНСТВО</p><h2 data-reveal>ЗДЕСЬ МОЖНО<br><em>ВЫДОХНУТЬ.</em></h2><p class="section-text" data-reveal>Тёплый свет, музыка без спешки и внимание только к тебе. Пространство, в которое хочется вернуться.</p><div class="space-points" data-reveal><span><b>01</b> Спокойная атмосфера</span><span><b>02</b> Внимание к деталям</span><span><b>03</b> Время для себя</span></div></div><div class="space-photo" data-reveal><img src="assets/studio-interior.jpg" alt="Интерьер барбершопа с креслами и тёплым светом" loading="lazy"><span>THE SPACE / BARBER ONE</span></div></div></section>
+
+    <section class="contact section" id="contact"><div class="container contact-inner"><p class="section-label" data-reveal>04 — ТВОЙ ХОД</p><h2 data-reveal>ПОРА ОБНОВИТЬ<br><em>СВОЙ ОБРАЗ.</em></h2><p data-reveal>Выбери услугу и попробуй, как может работать онлайн-запись на готовом сайте.</p><button class="button button-dark" type="button" data-booking data-reveal>Открыть запись <span aria-hidden="true">↗</span></button><span class="contact-watermark" aria-hidden="true">B1</span></div></section>
+  </main>
+
+  <footer class="footer"><div class="container footer-main"><a class="brand" href="#top"><span class="brand-symbol">B<span>✦</span>1</span><span class="brand-wordmark">BARBER <strong>ONE</strong></span></a><a href="#top" class="back-top">Наверх ↑</a></div><div class="container footer-bottom"><span>© <span id="year"></span> BARBER ONE</span><span>ДИЗАЙН-КОНЦЕПТ ДЛЯ ПОРТФОЛИО · ИЗОБРАЖЕНИЯ СОЗДАНЫ ДЛЯ ДЕМОНСТРАЦИИ</span></div></footer>
+
+  <dialog class="booking-dialog" id="booking" aria-labelledby="booking-title"><div class="dialog-header"><div><p class="section-label">ОНЛАЙН-ЗАПИСЬ / ДЕМО</p><h2 id="booking-title">ВЫБЕРИ СВОЁ ВРЕМЯ</h2></div><button class="dialog-close" type="button" aria-label="Закрыть окно">×</button></div><p class="dialog-note">Это демонстрация интерфейса. Заявка не отправляется в барбершоп и сохраняется только в этом браузере.</p><form id="booking-form"><label>Имя<input name="name" type="text" autocomplete="name" minlength="2" required placeholder="Как к вам обращаться"></label><label>Услуга<select name="service" required><option value="">Выберите услугу</option><option>Мужская стрижка</option><option>Стрижка машинкой</option><option>Оформление бороды</option><option>Стрижка + борода</option></select></label><label>Дата<input name="date" type="date" required></label><label>Время<select name="time" required><option value="">Выберите время</option><option>10:00</option><option>12:00</option><option>14:00</option><option>16:00</option><option>18:00</option><option>20:00</option></select></label><button class="button button-gold form-submit" type="submit">Сохранить демо запись <span aria-hidden="true">↗</span></button></form><p class="booking-result" id="booking-result" role="status" aria-live="polite" hidden></p></dialog>
+</body>
+</html>
